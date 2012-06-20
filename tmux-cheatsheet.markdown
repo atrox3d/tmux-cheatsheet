@@ -67,11 +67,11 @@ Resources:
 
 ## Configurations Options:
 
-#mouse support - set to on if you want to use the mouse
-* setw -g mode-mouse off
-* set -g mouse-select-pane off
-* set -g mouse-resize-pane off
-* set -g mouse-select-window off
+    #mouse support - set to on if you want to use the mouse
+    * setw -g mode-mouse off
+    * set -g mouse-select-pane off
+    * set -g mouse-resize-pane off
+    * set -g mouse-select-window off
 
 #Set the default terminal mode to 256color mode
 set -g default-terminal "screen-256color"
