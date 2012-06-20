@@ -94,16 +94,16 @@ For example, we can use "w" to jump to the next word and "b" to jump back one wo
     unbind Down
     bind Down last-window \; swap-pane -s tmp.1 \; kill-window -t tmp
 
-Resources:
+## Resources:
 
 * [tmux: Productive Mouse-Free Development](http://pragprog.com/book/bhtmux/tmux)
 * [How to reorder windows](http://superuser.com/questions/343572/tmux-how-do-i-reorder-my-windows)
 * [cheat sheet](http://cheat.errtheblog.com/s/tmux/)
 
-Notes:
+## Notes:
 
 * 
 
-TODO:
+## TODO:
 
 * 
