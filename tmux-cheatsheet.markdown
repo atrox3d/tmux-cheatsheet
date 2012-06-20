@@ -65,6 +65,17 @@ Resources:
 * [How to reorder windows](http://superuser.com/questions/343572/tmux-how-do-i-reorder-my-windows)
 * [cheat sheet](http://cheat.errtheblog.com/s/tmux/)
 
+## Configurations Options:
+
+#mouse support - set to on if you want to use the mouse
+* setw -g mode-mouse off
+* set -g mouse-select-pane off
+* set -g mouse-resize-pane off
+* set -g mouse-select-window off
+
+#Set the default terminal mode to 256color mode
+set -g default-terminal "screen-256color"
+
 Notes:
 
 * 
