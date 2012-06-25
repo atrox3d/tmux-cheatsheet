@@ -51,6 +51,11 @@ In tmux, hit the prefix `ctrl+b` (my modified prefix is ctrl+a) and then:
     +  break pane into window (e.g. to select text by mouse to copy)
     -  restore pane from window
     ⍽  space - toggle between layouts
+    PREFIX q (Show pane numbers, when the numbers show up type the key to goto that pane)
+    PREFIX { (Move the current pane left)
+    PREFIX } (Move the current pane right)
+
+    ## Resizing Panes
 
 ## Copy mode:
 
