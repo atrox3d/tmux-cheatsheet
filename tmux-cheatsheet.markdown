@@ -55,7 +55,21 @@ In tmux, hit the prefix `ctrl+b` (my modified prefix is ctrl+a) and then:
     PREFIX { (Move the current pane left)
     PREFIX } (Move the current pane right)
 
-    ## Resizing Panes
+## Resizing Panes
+Resizing Panes
+
+    You can also resize panes if you don’t like the layout defaults. I personally rarely need to do this, though it’s handy to know how. Here is the basic syntax to resize panes:
+
+    PREFIX : resize-pane (By default it resizes the current pane down)
+    PREFIX : resize-pane -U (Resizes the current pane upward)
+    PREFIX : resize-pane -L (Resizes the current pane left)
+    PREFIX : resize-pane -R (Resizes the current pane right)
+    PREFIX : resize-pane 20 (Resizes the current pane down by 20 cells)
+    PREFIX : resize-pane -U 20 (Resizes the current pane upward by 20 cells)
+    PREFIX : resize-pane -L 20 (Resizes the current pane left by 20 cells)
+    PREFIX : resize-pane -R 20 (Resizes the current pane right by 20 cells)
+    PREFIX : resize-pane -t 2 20 (Resizes the pane with the id of 2 down by 20 cells)
+    PREFIX : resize-pane -t -L 20 (Resizes the pane with the id of 2 left by 20 cells)
 
 ## Copy mode:
 
