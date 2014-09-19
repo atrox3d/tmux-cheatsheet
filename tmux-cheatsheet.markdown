@@ -40,7 +40,7 @@ In tmux, hit the prefix `ctrl+b` (my modified prefix is ctrl+a) and then:
     ,  name window
     &  kill window
 
-## Panes (splits)
+## <a name="PanesSplits"></a>Panes (splits) 
 
     %  vertical split
     "  horizontal split
@@ -51,9 +51,21 @@ In tmux, hit the prefix `ctrl+b` (my modified prefix is ctrl+a) and then:
     +  break pane into window (e.g. to select text by mouse to copy)
     -  restore pane from window
     ⍽  space - toggle between layouts
-    PREFIX q (Show pane numbers, when the numbers show up type the key to goto that pane)
-    PREFIX { (Move the current pane left)
-    PREFIX } (Move the current pane right)
+    <prefix> q (Show pane numbers, when the numbers show up type the key to goto that pane)
+    <prefix> { (Move the current pane left)
+    <prefix> } (Move the current pane right)
+    <prefix> z toggle pane zoom
+
+## <a name="syncPanes"></a>Sync Panes 
+
+You can do this by switching to the appropriate window, typing your Tmux prefix (commonly Ctrl-B or Ctrl-A) and then a colon to bring up a Tmux command line, and typing:
+
+```
+:setw synchronize-panes
+```
+
+You can optionally add on or off to specify which state you want; otherwise the option is simply toggled. This option is specific to one window, so it won’t change the way your other sessions or windows operate. When you’re done, toggle it off again by repeating the command. [tip source](http://blog.sanctum.geek.nz/sync-tmux-panes/)
+
 
 ## Resizing Panes
 
@@ -153,6 +165,7 @@ For example, we can use "w" to jump to the next word and "b" to jump back one wo
 
 * 
 
-## TODO:
+## Changelog:
 
-* 
+* 1411143833002 - Added [toggle zoom](#PanesSplits) under Panes (splits) section.
+* 1411143833002 - [Added Sync Panes](#syncPanes)
