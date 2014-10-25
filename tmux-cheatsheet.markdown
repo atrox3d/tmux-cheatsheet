@@ -20,9 +20,13 @@ list sessions:
 
     tmux ls
 
-kill session:
+<a name="killSessions"></a>kill session:
 
     tmux kill-session -t myname
+
+<a name="killAllSessions"></a>Kill all the tmux sessions:
+
+    tmux ls | grep : | cut -d. -f1 | awk '{print substr($1, 0, length($1)-1)}' | xargs kill
 
 In tmux, hit the prefix `ctrl+b` (my modified prefix is ctrl+a) and then:
 
@@ -169,6 +173,7 @@ For example, we can use "w" to jump to the next word and "b" to jump back one wo
 
 * 1411143833002 - Added [toggle zoom](#PanesSplits) under Panes (splits) section.
 * 1411143833002 - [Added Sync Panes](#syncPanes)
+* 1414276652677 - [Added Kill all tmux sessions ](#killAllSessions)
  
 ## Request an Update:
 
