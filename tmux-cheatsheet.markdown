@@ -36,10 +36,12 @@ In tmux, hit the prefix `ctrl+b` (my modified prefix is ctrl+a) and then:
     s  list sessions
     $  name session
 
-## Windows (tabs)
+## <a name="WindowsTabs"></a>Windows (tabs)
 
-    c  new window
+    c  create window
     w  list windows
+    n  next window
+    p  previous window
     f  find window
     ,  name window
     &  kill window
@@ -175,6 +177,7 @@ For example, we can use "w" to jump to the next word and "b" to jump back one wo
 * 1411143833002 - Added [toggle zoom](#PanesSplits) under Panes (splits) section.
 * 1411143833002 - [Added Sync Panes](#syncPanes)
 * 1414276652677 - [Added Kill all tmux sessions ](#killAllSessions)
+* 1438585211173 - [corrected create and add next and previus thanks to @justinjhendrick](#WindowsTabs)
  
 ## Request an Update:
 
